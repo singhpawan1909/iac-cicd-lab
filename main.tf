@@ -20,12 +20,12 @@ variable "region" {
 variable "student_suffix" {
   description = "Unique suffix for your resources"
   type        = string
-  default     = "123"
+  default     = "PawanSingh"
 }
 
 # Create the S3 bucket
 resource "aws_s3_bucket" "lab" {
-  bucket = "sigmoid-iac123-${var.student_suffix}"
+  bucket = "sigmoid-iac12334-${var.student_suffix}"
 
   tags = {
     Name    = "sigmoid-iac-${var.student_suffix}"
